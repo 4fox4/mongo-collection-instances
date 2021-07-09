@@ -10,7 +10,7 @@ CollectionExtensions.addExtension(function (name, options) {
 
 Mongo.Collection.get = function(name, options) {
   options = options || {};
-  var collection = _.find(instances, function(instance) {
+  var collection = instances.find(function(instance) {
     if (options.connection)
       return instance.name === name &&
         instance.options && instance.options.connection._lastSessionId === options.connection._lastSessionId;

@@ -1,15 +1,14 @@
 Package.describe({
-  name: 'dburles:mongo-collection-instances',
+  name: '4fox4:mongo-collection-instances',
   summary: 'Access your Mongo instances',
-  version: '0.3.5',
-  git: 'https://github.com/dburles/mongo-collection-instances.git'
+  version: '0.3.6',
+  git: 'https://github.com/4fox4/mongo-collection-instances.git'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
   api.use([
     'mongo',
-    'underscore',
     'lai:collection-extensions@0.2.1_1']);
   api.addFiles('mongo-instances.js');
 });
@@ -19,6 +18,6 @@ Package.onTest(function(api) {
     'tinytest',
     'accounts-base',
     'mongo',
-    'dburles:mongo-collection-instances']);
+    '4fox4:mongo-collection-instances']);
   api.addFiles('mongo-instances-tests.js');
 });

@@ -1,3 +1,5 @@
+Forked from https://github.com/dburles/mongo-collection-instances
+
 Mongo Collection Instances
 ===============
 
@@ -6,7 +8,7 @@ This package augments Mongo.Collection (and the deprecated Meteor.Collection) an
 ## Installation
 
 ```sh
-$ meteor add dburles:mongo-collection-instances
+$ meteor add 4fox4:mongo-collection-instances
 ```
 
 ## Usage Example
