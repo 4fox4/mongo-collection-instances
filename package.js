@@ -7,7 +7,7 @@ Package.describe({
 
 Package.onUse(function (api) {
   api.versionsFrom(["1.0", "2.3"]);
-  api.use(["mongo", "planable:collection-extensions"]);
+  api.use(["mongo", "planable:collection-extensions@0.2.3"]);
   api.addFiles("mongo-instances.js");
 });
 
